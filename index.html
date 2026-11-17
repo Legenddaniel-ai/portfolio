@@ -1,870 +1,118 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4F4F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+<title>Ayomide Daniel | Full-Stack Developer, Lagos</title>
+<meta name="description" content="Ayomide Daniel is a full-stack developer in Lagos building web apps with PHP, MySQL and JavaScript.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="w">
+  <a class="brand" href="#top">Ayomide Daniel</a>
+  <nav aria-label="Main"><ul>
+    <li><a class="ul" href="#top">Home</a></li><li><a class="ul" href="#about">About</a></li><li><a class="ul" href="#work">Work</a></li><li><a class="ul" href="#contact">Contact</a></li>
+    <li><a class="btn p" href="#book">Book a Call</a></li></ul></nav>
+  <button id="mbtn" type="button" aria-expanded="false" aria-controls="sheet">Menu</button>
+</div></header>
+<div id="sheet" hidden><a href="#top">Home</a><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a><a href="#book" style="color:var(--y)">Book a Call</a></div>
 
-<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Ayomide Daniel — Software Engineer</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#3c0091","inverse-on-surface":"#2c303a","surface-container-highest":"#31353f","tertiary":"#4edea3","tertiary-container":"#1bbd85","surface-container-lowest":"#0a0e17","on-tertiary":"#003824","primary-container":"#06b6d4","secondary-fixed-dim":"#d0bcff","primary-fixed":"#acedff","on-primary-fixed-variant":"#004e5c","on-primary-container":"#00424f","on-error":"#690005","error-container":"#93000a","surface-tint":"#4cd7f6","on-tertiary-fixed":"#002113","outline":"#869397","secondary-container":"#571bc1","secondary-fixed":"#e9ddff","outline-variant":"#3d494c","surface-dim":"#0f131c","on-surface-variant":"#bcc9cd","on-error-container":"#ffdad6","on-tertiary-container":"#00452e","on-secondary-container":"#c4abff","on-surface":"#dfe2ef","tertiary-fixed-dim":"#4edea3","on-primary":"#003640","on-background":"#dfe2ef","primary-fixed-dim":"#4cd7f6","surface-bright":"#353943","on-tertiary-fixed-variant":"#005236","surface-container":"#1c1f29","on-primary-fixed":"#001f26","inverse-surface":"#dfe2ef","surface-variant":"#31353f","surface":"#0f131c","tertiary-fixed":"#6ffbbe","background":"#0f131c","on-secondary-fixed-variant":"#5516be","surface-container-high":"#262a34","primary":"#4cd7f6","surface-container-low":"#181b25","secondary":"#d0bcff","on-secondary-fixed":"#23005c","error":"#ffb4ab","inverse-primary":"#00687a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2.5rem","space-lg":"1.5rem","gutter":"1.5rem","gutter-mobile":"1rem","margin-mobile":"1.25rem","space-md":"1rem"},fontFamily:{"headline-md":["Inter"],"headline-lg":["Inter"],"display":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"label-sm":["JetBrains Mono"],"headline-sm":["Inter"],"code-inline":["JetBrains Mono"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"display-mobile":["Inter"],"label-md":["JetBrains Mono"]},fontSize:{"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"display":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-inline":["14px",{"lineHeight":"20px","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"800"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}]}}}};</script></head><body class="bg-background text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[1200px] mx-auto px-margin flex items-center justify-between"><a class="flex items-center gap-2 group" href="#"><span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-md text-label-md text-primary font-bold tracking-wider">AD<span class="text-tertiary">.dev</span></span></a><nav class="hidden md:flex items-center gap-6" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="portfolio" href="#about">About</a><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="portfolio" href="#skills">Skills</a><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="portfolio" href="#projects">Projects</a><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="portfolio" href="#experience">Experience</a><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="portfolio" href="#contact">Contact</a></nav><div class="flex items-center gap-3"><button aria-label="Toggle light/dark theme" class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors hover:bg-surface-container-highest" id="theme-toggle" type="button"><span class="material-symbols-outlined text-[18px]">light_mode</span></button><a class="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold shadow-[0_0_16px_rgba(6,182,212,0.3)] hover:opacity-95 transition-opacity" href="#contact">Hire Me</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background"><div class="flex flex-col w-full text-on-surface">
-<!-- TOP HERO AMBIENT ORBIT SECTION -->
-<section class="relative w-full overflow-hidden py-space-xl lg:py-24">
-<!-- Ambient radial glow background accents -->
-<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
-<div class="absolute top-1/3 -right-24 w-[400px] h-[400px] bg-secondary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
-<div class="max-w-[1200px] mx-auto px-margin">
-<!-- Grid layout: Slider & Bio on left, Mindblowing Avatar on right -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<!-- Left Column: Interactive Hero Slider & High-Impact Copy (7 Cols) -->
-<div class="lg:col-span-7 flex flex-col gap-space-md z-10">
-<!-- Overline Tag -->
-<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface-container-high border-0 shadow-sm backdrop-blur-md">
-<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
-<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Full-Stack Software Engineer</span>
-<span class="text-outline-variant font-label-sm text-label-sm">•</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Lagos &amp; Global Remote</span>
-</div>
-<!-- Dynamic Text Carousel Wrapper -->
-<div class="relative min-h-[170px] sm:min-h-[190px] flex items-center">
-<!-- Slide 1 (Active) -->
-<div class="hero-slide transition-all duration-700 opacity-100 translate-y-0 absolute inset-0 flex flex-col justify-center" id="slide-0">
-<h1 class="font-display text-display text-on-surface leading-tight tracking-tight">
-                Architecting <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Scalable Web</span> Solutions with PHP &amp; Modern Frameworks.
-              </h1>
-</div>
-<!-- Slide 2 -->
-<div class="hero-slide transition-all duration-700 opacity-0 translate-y-4 pointer-events-none absolute inset-0 flex flex-col justify-center" id="slide-1">
-<h2 class="font-display text-display text-on-surface leading-tight tracking-tight">
-                Crafting High-Performance, Fluid <span class="text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-primary">Interactive UIs</span> with JavaScript &amp; CSS.
-              </h2>
-</div>
-<!-- Slide 3 -->
-<div class="hero-slide transition-all duration-700 opacity-0 translate-y-4 pointer-events-none absolute inset-0 flex flex-col justify-center" id="slide-2">
-<h2 class="font-display text-display text-on-surface leading-tight tracking-tight">
-                Bridging Enterprise <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary-fixed-dim">Backend Logic</span> with Pristine Design Systems.
-              </h2>
-</div>
-<!-- Slide 4 -->
-<div class="hero-slide transition-all duration-700 opacity-0 translate-y-4 pointer-events-none absolute inset-0 flex flex-col justify-center" id="slide-3">
-<h2 class="font-display text-display text-on-surface leading-tight tracking-tight">
-                Empowering Global Brands through <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-tertiary to-secondary">Clean Code</span> &amp; Speed.
-              </h2>
-</div>
-</div>
-<!-- Slider Subtext and Indicator Controls -->
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-2">
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xl transition-all duration-500" id="slide-caption">
-              Transforming complex engineering bottlenecks into robust web applications, responsive interfaces, and production-ready APIs.
-            </p>
-<!-- Carousel Control Buttons -->
-<div class="flex items-center gap-2 self-start sm:self-center shrink-0">
-<button aria-label="Previous Slide" class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors" id="prev-slide-btn">
-<span class="material-symbols-outlined text-[18px]">chevron_left</span>
-</button>
-<div class="flex items-center gap-1.5 px-2">
-<button aria-label="Go to slide 1" class="slider-dot w-6 h-1.5 rounded-full bg-primary transition-all duration-300" data-index="0"></button>
-<button aria-label="Go to slide 2" class="slider-dot w-2 h-1.5 rounded-full bg-outline-variant hover:bg-on-surface-variant transition-all duration-300" data-index="1"></button>
-<button aria-label="Go to slide 3" class="slider-dot w-2 h-1.5 rounded-full bg-outline-variant hover:bg-on-surface-variant transition-all duration-300" data-index="2"></button>
-<button aria-label="Go to slide 4" class="slider-dot w-2 h-1.5 rounded-full bg-outline-variant hover:bg-on-surface-variant transition-all duration-300" data-index="3"></button>
-</div>
-<button aria-label="Next Slide" class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors" id="next-slide-btn">
-<span class="material-symbols-outlined text-[18px]">chevron_right</span>
-</button>
-</div>
-</div>
-<!-- CTAs & Direct Contact Quick Access -->
-<div class="flex flex-wrap items-center gap-4 pt-4">
-<a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm hover:opacity-90 shadow-[0_0_24px_rgba(6,182,212,0.35)] transition-all" href="https://wa.me/2348087824544?text=Hello%20Ayomide,%20I'd%20like%20to%20discuss%20a%20project" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[20px]">chat</span>
-<span>Chat on WhatsApp</span>
-</a>
-<a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-headline-sm text-headline-sm transition-all shadow-sm" href="mailto:ayomidedaniel451@gmail.com">
-<span class="material-symbols-outlined text-[20px]">alternate_email</span>
-<span>Email Ayomide</span>
-</a>
-<a class="inline-flex items-center gap-1.5 px-4 py-3 rounded-lg text-primary hover:text-primary-fixed transition-colors font-body-md text-body-md font-medium" href="#projects">
-<span>View Portfolio Works</span>
-<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
-</a>
-</div>
-<!-- Quick Terminal Meta Pill -->
-<div class="mt-4 p-3 rounded-xl bg-surface-container-low/90 backdrop-blur-md flex items-center justify-between gap-3 text-on-surface-variant">
-<div class="flex items-center gap-2 font-code-inline text-code-inline text-on-surface">
-<span class="text-tertiary">➜</span>
-<span class="text-primary font-bold">ayomide@portfolio:</span>
-<span class="text-on-surface-variant">stack --list</span>
-</div>
-<div class="hidden sm:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
-<span class="px-2 py-0.5 rounded bg-surface-container">PHP 8.x</span>
-<span class="px-2 py-0.5 rounded bg-surface-container">MySQL</span>
-<span class="px-2 py-0.5 rounded bg-surface-container">JavaScript</span>
-<span class="px-2 py-0.5 rounded bg-surface-container">Bootstrap</span>
-</div>
-</div>
-</div>
-<!-- Right Column: Mind-Blowing Animated Avatar Showcase (5 Cols) -->
-<div class="lg:col-span-5 flex justify-center items-center py-6 lg:py-0 relative">
-<div class="relative w-[320px] h-[320px] sm:w-[390px] sm:h-[390px] flex items-center justify-center">
-<!-- Pulsing Ambient Radial Outer Halo -->
-<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 via-tertiary/15 to-secondary-container/25 blur-2xl animate-pulse"></div>
-<!-- Rotating Concentric Tech Orbit Ring 1 -->
-<div class="absolute inset-[-14px] rounded-full border border-dashed border-primary/30 animate-[spin_30s_linear_infinite] pointer-events-none"></div>
-<!-- Rotating Concentric Tech Orbit Ring 2 (Counter-clockwise with node dots) -->
-<div class="absolute inset-[-32px] rounded-full border border-dotted border-secondary/25 animate-[spin_45s_linear_infinite_reverse] pointer-events-none flex items-start justify-center">
-<div class="w-3 h-3 rounded-full bg-tertiary shadow-[0_0_10px_#4edea3]"></div>
-</div>
-<!-- Glowing Beveled Outer Shield Card -->
-<div class="relative w-full h-full rounded-full p-2.5 bg-gradient-to-b from-primary/40 via-surface-container to-secondary/30 shadow-[0_0_40px_rgba(76,215,246,0.25)] flex items-center justify-center">
-<!-- Inner Frame with User Photo -->
-<div class="relative w-full h-full rounded-full overflow-hidden bg-surface-container-lowest">
-<img alt="Ayomide Daniel - Professional Software Engineer portrait" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700 filter brightness-105 contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkjzXJEKxO5Bp6tAHqAn7qE0zqdXNUC63FYf0lS-5x0WF-0kkOC4VZdNJ6HYTpTz6hJr5yrMohoaiKhoik9dtemeoDChx4IQRy4sOmUxPKWA4Ncj3sY2PAfW__SGKaHApgm0_qjlmErYXViiG_L0fcjNez3PXlhZdtv2h99dioDelGrhPE0Nmffzd0qqTjmf6CgYz1IThOf3cDirqzQwBkLAumVAMiNbc739HaIrOk6AU2i38yN45J"/>
-<!-- Subtle Gradient Scrim -->
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/70 via-transparent to-transparent"></div>
-</div>
-</div>
-<!-- Floating Badge: Available for Hire -->
-<div class="absolute -bottom-3 sm:bottom-2 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:-left-4 z-20 px-4 py-2 rounded-xl bg-surface-container-high/95 backdrop-blur-xl shadow-xl flex items-center gap-2.5">
-<span class="relative flex h-3 w-3">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-3 w-3 bg-tertiary"></span>
-</span>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-bold">Status: Online</span>
-<span class="font-body-sm text-body-sm text-on-surface font-semibold">Available for Hire</span>
-</div>
-</div>
-<!-- Floating Technical Metric Badge -->
-<div class="hidden sm:flex absolute -top-2 -right-4 z-20 px-3.5 py-2 rounded-xl bg-surface-container-high/95 backdrop-blur-xl shadow-xl flex-col items-start gap-0.5">
-<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Engineering</span>
-<span class="font-code-inline text-code-inline text-on-surface font-bold">100% Delivery Rate</span>
-</div>
-<!-- Floating Code Language Badge -->
-<div class="hidden sm:flex absolute bottom-8 -right-6 z-20 px-3 py-1.5 rounded-lg bg-surface-container/90 backdrop-blur-md shadow-lg items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-primary"></span>
-<span class="font-code-inline text-code-inline text-on-surface-variant font-medium">PHP 8 • JS (ES6+)</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Quick Snapshot Bar (Counters) -->
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter mt-16 p-6 rounded-2xl bg-surface-container-low/70 backdrop-blur-md shadow-sm">
-<div class="flex flex-col gap-1 p-2">
-<span class="font-display text-display text-primary font-black tracking-tight">4<span class="text-tertiary">+</span></span>
-<span class="font-headline-sm text-headline-sm text-on-surface">Years Dev Experience</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Full-lifecycle web engineering</span>
-</div>
-<div class="flex flex-col gap-1 p-2">
-<span class="font-display text-display text-secondary-fixed-dim font-black tracking-tight">25<span class="text-primary">+</span></span>
-<span class="font-headline-sm text-headline-sm text-on-surface">Shipped Projects</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">APIs, CMS &amp; Web Applications</span>
-</div>
-<div class="flex flex-col gap-1 p-2">
-<span class="font-display text-display text-tertiary font-black tracking-tight">99<span class="text-primary-fixed">%</span></span>
-<span class="font-headline-sm text-headline-sm text-on-surface">Client Satisfaction</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Precision code &amp; reliable delivery</span>
-</div>
-<div class="flex flex-col gap-1 p-2">
-<span class="font-display text-display text-primary font-black tracking-tight">&lt; 2<span class="text-tertiary">hr</span></span>
-<span class="font-headline-sm text-headline-sm text-on-surface">Fast Response Time</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Active communication via WhatsApp/Mail</span>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION: ABOUT ME & ENGINEERING ETHOS -->
-<section class="w-full py-space-xl" id="about">
-<div class="max-w-[1200px] mx-auto px-margin">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<!-- Left: Structural Visual & Narrative (7 cols) -->
-<div class="lg:col-span-7 flex flex-col gap-space-md">
-<div class="flex items-center gap-2 text-primary font-label-md text-label-md tracking-wider uppercase">
-<span class="material-symbols-outlined text-[18px]">terminal</span>
-<span>Profile &amp; Technical Philosophy</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
-            Engineering resilient backend architectures and intuitive digital experiences.
-          </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-            I am <strong class="text-on-surface font-semibold">Ayomide Daniel</strong>, a seasoned software engineer who bridges the gap between deep server-side logic and responsive, high-fidelity user experiences. With an unwavering commitment to clean code, semantic structures, and data integrity, I build systems that scale smoothly without technical debt.
-          </p>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-            Whether implementing secure database migrations and robust authentication mechanisms in <strong class="text-primary font-semibold">PHP &amp; MySQL</strong>, orchestrating asynchronous dynamic views in <strong class="text-tertiary font-semibold">modern JavaScript</strong>, or tailoring responsive components with <strong class="text-secondary font-semibold">Bootstrap and modern CSS</strong>, I prioritize performance, maintainability, and end-user delight.
-          </p>
-<!-- Core Pillars Bento -->
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-2">
-<div class="p-4 rounded-xl bg-surface-container-high/60 backdrop-blur-sm flex flex-col gap-2">
-<span class="material-symbols-outlined text-primary text-[24px]">database</span>
-<span class="font-headline-sm text-headline-sm text-on-surface">Data Integrity</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Schema normalization, prepared statements, and transactional safety.</p>
-</div>
-<div class="p-4 rounded-xl bg-surface-container-high/60 backdrop-blur-sm flex flex-col gap-2">
-<span class="material-symbols-outlined text-tertiary text-[24px]">speed</span>
-<span class="font-headline-sm text-headline-sm text-on-surface">High Performance</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Zero-bloat DOM structures, optimized asset delivery, and quick TTFB.</p>
-</div>
-<div class="p-4 rounded-xl bg-surface-container-high/60 backdrop-blur-sm flex flex-col gap-2">
-<span class="material-symbols-outlined text-secondary text-[24px]">devices</span>
-<span class="font-headline-sm text-headline-sm text-on-surface">Fluid Interfaces</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Flawless responsive behavior across mobile, tablet, and ultra-wide screens.</p>
-</div>
-</div>
-</div>
-<!-- Right: Code Workspace Mockup (5 cols) -->
-<div class="lg:col-span-5">
-<div class="rounded-2xl bg-surface-container-lowest shadow-2xl overflow-hidden">
-<!-- IDE Window Top Bar -->
-<div class="px-4 py-3 bg-surface-container-low flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="w-3 h-3 rounded-full bg-error"></span>
-<span class="w-3 h-3 rounded-full bg-primary-container"></span>
-<span class="w-3 h-3 rounded-full bg-tertiary"></span>
-<span class="ml-2 font-label-sm text-label-sm text-on-surface-variant">AyomideDaniel.php</span>
-</div>
-<span class="font-label-sm text-label-sm text-on-surface-variant">utf-8 • PHP 8.2</span>
-</div>
-<!-- Code Content -->
-<div class="p-5 font-code-inline text-code-inline leading-relaxed overflow-x-auto text-on-surface-variant">
-<p><span class="text-secondary">declare</span>(strict_types=1);</p>
-<p class="text-outline-variant">// Architected by Ayomide Daniel</p>
-<br/>
-<p><span class="text-primary font-bold">namespace</span> Core\Engineers;</p>
-<br/>
-<p><span class="text-primary font-bold">final class</span> <span class="text-tertiary">AyomideDaniel</span> <span class="text-primary font-bold">implements</span> SoftwareCraftsman {</p>
-<div class="pl-4">
-<p><span class="text-primary font-bold">public function</span> <span class="text-secondary-fixed-dim">getSpecializations</span>(): <span class="text-tertiary">array</span> {</p>
-<div class="pl-4">
-<p><span class="text-secondary font-bold">return</span> [</p>
-<p class="pl-4 text-tertiary-fixed-dim">'backend' =&gt; ['PHP', 'MySQL', 'REST APIs', 'MVC'],</p>
-<p class="pl-4 text-primary-fixed-dim">'frontend' =&gt; ['JavaScript ES6+', 'CSS3', 'Bootstrap'],</p>
-<p class="pl-4 text-secondary-fixed">'strengths' =&gt; ['Clean Code', 'Responsive UI', 'Speed']</p>
-<p>];</p>
-</div>
-<p>}</p>
-<br/>
-<p><span class="text-primary font-bold">public function</span> <span class="text-secondary-fixed-dim">isAvailableForHire</span>(): <span class="text-tertiary">bool</span> {</p>
-<p class="pl-4"><span class="text-secondary font-bold">return</span> <span class="text-tertiary font-bold">true</span>; <span class="text-outline-variant">// Ready for contract &amp; full-time</span></p>
-<p>}</p>
-</div>
-<p>}</p>
-</div>
-<div class="px-5 py-3 bg-surface-container-high/40 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
-<span class="flex items-center gap-1.5 text-tertiary">
-<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Tests passing: 14/14
-              </span>
-<span>Execution: 12ms</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION: TECH STACK & EXPERTISE -->
-<section class="w-full py-space-xl bg-surface-container-low/40" id="skills">
-<div class="max-w-[1200px] mx-auto px-margin">
-<!-- Section Header -->
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
-<div class="flex flex-col gap-2">
-<div class="flex items-center gap-2 text-primary font-label-md text-label-md tracking-wider uppercase">
-<span class="material-symbols-outlined text-[18px]">integration_instructions</span>
-<span>Core Competencies</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Technologies &amp; Production Stack</h2>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
-          Deep, pragmatic mastery across the core pillars of enterprise web development, backend data processing, and user interface delivery.
-        </p>
-</div>
-<!-- Skills Cards Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- Skill 1: PHP & Backend Architecture -->
-<div class="p-6 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-md group flex flex-col justify-between">
-<div class="flex flex-col gap-4">
-<div class="flex items-center justify-between">
-<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-headline-sm">
-                PHP
-              </div>
-<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary/10 text-primary font-bold">95% Mastery</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">PHP &amp; Server-Side Engineering</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Architecture of performant backend applications, object-oriented PHP patterns, RESTful endpoint development, secure session handling, and high-volume MySQL queries.
-            </p>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">PHP 8.x</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">MySQL</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">REST APIs</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Authentication</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">MVC Patterns</span>
-</div>
-</div>
-<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-6">
-<div class="bg-primary h-full w-[95%] rounded-full transition-all duration-1000"></div>
-</div>
-</div>
-<!-- Skill 2: JavaScript & Dynamic Client Logic -->
-<div class="p-6 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-md group flex flex-col justify-between">
-<div class="flex flex-col gap-4">
-<div class="flex items-center justify-between">
-<div class="w-12 h-12 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center font-bold text-headline-sm">
-                JS
-              </div>
-<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary font-bold">92% Mastery</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Modern JavaScript (ES6+)</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Fluent client-side engineering utilizing asynchronous workflows (Fetch/Promises), reactive DOM state manipulation, modular code patterns, and snappy event systems.
-            </p>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">ES6+ Standard</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Async / Await</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">DOM APIs</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">State Sync</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">SPA Patterns</span>
-</div>
-</div>
-<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-6">
-<div class="bg-tertiary h-full w-[92%] rounded-full transition-all duration-1000"></div>
-</div>
-</div>
-<!-- Skill 3: Bootstrap & Rapid Modern UI -->
-<div class="p-6 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-md group flex flex-col justify-between">
-<div class="flex flex-col gap-4">
-<div class="flex items-center justify-between">
-<div class="w-12 h-12 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center font-bold text-headline-sm">
-                BS
-              </div>
-<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary/10 text-secondary font-bold">96% Mastery</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Bootstrap &amp; Grid Systems</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Accelerating production interfaces with custom Bootstrap 5 architectures, utility token customization, mobile-first breakpoints, and bespoke enterprise dashboards.
-            </p>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Bootstrap 5</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Responsive Grids</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Sass Theming</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">UI Components</span>
-</div>
-</div>
-<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-6">
-<div class="bg-secondary h-full w-[96%] rounded-full transition-all duration-1000"></div>
-</div>
-</div>
-<!-- Skill 4: CSS3 & Modern Animation -->
-<div class="p-6 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-md group flex flex-col justify-between">
-<div class="flex flex-col gap-4">
-<div class="flex items-center justify-between">
-<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary-container flex items-center justify-center font-bold text-headline-sm">
-                CSS
-              </div>
-<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary-container/10 text-primary-fixed-dim font-bold">94% Mastery</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">CSS3 &amp; Motion Design</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Complex responsive layouts via CSS Grid and Flexbox, GPU-accelerated keyframe animations, glassmorphic surfaces, variable tokens, and dark-mode adaptation.
-            </p>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">CSS Grid</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Flexbox</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Keyframes</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Glassmorphism</span>
-</div>
-</div>
-<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-6">
-<div class="bg-primary-container h-full w-[94%] rounded-full transition-all duration-1000"></div>
-</div>
-</div>
-<!-- Skill 5: Semantic HTML5 & Web Standards -->
-<div class="p-6 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-md group flex flex-col justify-between">
-<div class="flex flex-col gap-4">
-<div class="flex items-center justify-between">
-<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center font-bold text-headline-sm">
-                HTML
-              </div>
-<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary font-bold">98% Mastery</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Semantic HTML5 &amp; a11y</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Accessible markup patterns complying with WCAG specifications, SEO-tuned metadata structures, performance preload configurations, and clean DOM trees.
-            </p>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Semantic Markup</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">WCAG 2.1 AA</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">SEO Standards</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Microdata</span>
-</div>
-</div>
-<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-6">
-<div class="bg-tertiary h-full w-[98%] rounded-full transition-all duration-1000"></div>
-</div>
-</div>
-<!-- Skill 6: Database & Deployment Workflows -->
-<div class="p-6 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-300 shadow-md group flex flex-col justify-between">
-<div class="flex flex-col gap-4">
-<div class="flex items-center justify-between">
-<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary-fixed-dim flex items-center justify-center font-bold text-headline-sm">
-                DB
-              </div>
-<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary/10 text-secondary font-bold">90% Mastery</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">MySQL, Git &amp; Deployment</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Relational schema indexing, query optimization, version control workflows with Git, server configuration (Apache/Nginx), and reliable deployment practices.
-            </p>
-<div class="flex flex-wrap gap-1.5 pt-2">
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">MySQL Relational</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Git / GitHub</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">Linux / Nginx</span>
-<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-high text-on-surface">cPanel &amp; Cloud</span>
-</div>
-</div>
-<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-6">
-<div class="bg-secondary h-full w-[90%] rounded-full transition-all duration-1000"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION: FEATURED WORK / PROJECTS -->
-<section class="w-full py-space-xl" id="projects">
-<div class="max-w-[1200px] mx-auto px-margin">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
-<div class="flex flex-col gap-2">
-<div class="flex items-center gap-2 text-primary font-label-md text-label-md tracking-wider uppercase">
-<span class="material-symbols-outlined text-[18px]">layers</span>
-<span>Selected Projects</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Production Systems &amp; Web Applications</h2>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
-          A showcase of recent enterprise architectures, commercial platforms, and responsive applications engineered with clean code standards.
-        </p>
-</div>
-<!-- Projects Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
-<!-- Project 1 -->
-<div class="group rounded-2xl bg-surface-container overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
-<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern dark mode web application dashboard user interface showing analytical charts, financial metrics, and live transaction tables in cyan and emerald accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArEUiHwfuDejWSc5ZG6O0VV_czLoVNegl8jAusF4Cw_k33F1tajDlnjwrnq49Afwkfyr67wJMlU1DCToBukcr8ivbJ3BI0kDrZerpdn2OxLMPyk0y5TQFPOlJg-urKgiN-63UgoUWzKBc4L7K3SyNjehnJNkzsJrfpgnYq2RQ5BzswSomB38I1SM3Z3JtcA9ypas8K2ZF5rR7xvIy6Ms8XrEDyx5x_KRuE5_xAdlI"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
-<div class="absolute top-4 right-4 flex items-center gap-2">
-<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-bold">Enterprise Backend</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-1 justify-between gap-6">
-<div class="flex flex-col gap-3">
-<div class="flex flex-wrap items-center gap-2">
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-primary">PHP 8</span>
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-primary">MySQL</span>
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-tertiary">JavaScript ES6</span>
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-secondary">Bootstrap 5</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
-                OmniFlow — Multi-Tenant Business &amp; Invoicing Platform
-              </h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Full-featured enterprise platform facilitating invoice automation, inventory synchronization, and role-based staff authorization with secure MySQL transactions.
-              </p>
-</div>
-<div class="flex items-center justify-between pt-4 border-t-0 bg-surface-container-low/40 -mx-6 -mb-6 px-6 py-4">
-<a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-headline-sm text-headline-sm transition-colors" href="https://wa.me/2348087824544?text=Hi%20Ayomide,%20tell%20me%20more%20about%20the%20OmniFlow%20project">
-<span>Request Case Study &amp; Demo</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-<span class="font-code-inline text-code-inline text-on-surface-variant">v2.4 Production</span>
-</div>
-</div>
-</div>
-<!-- Project 2 -->
-<div class="group rounded-2xl bg-surface-container overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
-<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sleek e-commerce store user interface showcasing high-end digital electronics catalog with cart modal and checkout drawer in dark minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEZYmm-br6VoceEAc3tRhXJt79hEX3D0YDdlIrgW8kLZlzR-XPvmQlcQM-9Q-cUQ692RZ5Xtwx8_CNpJEBbKBKJCTgFCwJ1GE284eQpUA-7AoGtkFIZX7bUqdyEdKuxr1LFvInMreqA_TozJruq2b2c7Vadz3otOZIz5yeGP9S8ukPWmjDKRPGkw4rwqyCPOLaiXJkNqyVCXIrarXyvwd0vhgIIkKQemxym6GHHm4"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
-<div class="absolute top-4 right-4 flex items-center gap-2">
-<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-bold">E-Commerce &amp; Pay</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-1 justify-between gap-6">
-<div class="flex flex-col gap-3">
-<div class="flex flex-wrap items-center gap-2">
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-primary">PHP REST API</span>
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-tertiary">Vanilla JS Engine</span>
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-secondary">Custom CSS3</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
-                ApexCart — High-Velocity Commerce &amp; Payment Gateway
-              </h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                High-performance storefront with lightning-fast cart operations, automated order webhooks, real-time inventory locking, and zero external frontend dependencies.
-              </p>
-</div>
-<div class="flex items-center justify-between pt-4 border-t-0 bg-surface-container-low/40 -mx-6 -mb-6 px-6 py-4">
-<a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-headline-sm text-headline-sm transition-colors" href="https://wa.me/2348087824544?text=Hi%20Ayomide,%20I%20am%20interested%20in%20ApexCart">
-<span>View Implementation Details</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-<span class="font-code-inline text-code-inline text-on-surface-variant">99.8 Lighthouse</span>
-</div>
-</div>
-</div>
-<!-- Project 3 -->
-<div class="group rounded-2xl bg-surface-container overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
-<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Interactive real-time healthcare telemetry analytics screen with dark theme, responsive grid cards, patient status lists, and glowing graphs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6KGfINxw8rKdEu_Lizxv0aczBmAisX2oLKAjV1sKiM54Wt-MPgHnA5iGJRZTGIRyblJP1-sS8roDvJP9KQgoOdzV6buXMBXLq12UfV9f1HjDsWcDmOAj9MJ8JjYDwDEhXBY3G053sJISjzic5eOPrDneWR8mtWWAMegDc2xsiNBX5TeprXV0y7i907st2n7MAs05USLKLkpcoQ84zxZgx-nlxAoDEDenwwv7NA20"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
-<div class="absolute top-4 right-4 flex items-center gap-2">
-<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary-fixed-dim font-bold">Portal &amp; CRM</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-1 justify-between gap-6">
-<div class="flex flex-col gap-3">
-<div class="flex flex-wrap items-center gap-2">
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-primary">PHP MVC</span>
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-secondary">Bootstrap 5.3</span>
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-primary">AJAX / Fetch</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
-                PulseClinic — Medical Appointments &amp; Patient Portal
-              </h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                HIPAA-conscious appointment scheduler with dynamic time-slot reservation, automated SMS reminders, doctor calendars, and responsive mobile optimization.
-              </p>
-</div>
-<div class="flex items-center justify-between pt-4 border-t-0 bg-surface-container-low/40 -mx-6 -mb-6 px-6 py-4">
-<a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-headline-sm text-headline-sm transition-colors" href="https://wa.me/2348087824544?text=Hi%20Ayomide,%20I'd%20like%20to%20learn%20about%20PulseClinic">
-<span>Explore Architecture</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-<span class="font-code-inline text-code-inline text-on-surface-variant">Active Service</span>
-</div>
-</div>
-</div>
-<!-- Project 4 -->
-<div class="group rounded-2xl bg-surface-container overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
-<div class="relative w-full h-64 overflow-hidden bg-surface-container-lowest">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern logistics route tracking web app user interface with dark theme, interactive map layers, courier status cards, and live delivery coordinates." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBKtKUF_MCSyZo1iAlkwyrcjk-By1CXzYhnIFX8kXyKnNNY2znu8aG4-WgcRRbwISQ5m9aKgm1Orbxz6Nk9PHiLkGHxnA2lXQp998dbEqGcPgQijDXSm33CCWVVu9wn1rzKij_HSslhIuX7p3PTHMCXOTnbbZmYaGiJ4pxXGsVcC1z8taJ0Wryl2QxVsDg_VgZq1E93SCZJNFi2EKnVqA66zdceeIhQT4LjfHUm_o"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
-<div class="absolute top-4 right-4 flex items-center gap-2">
-<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-bold">Logistics &amp; Geo</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-1 justify-between gap-6">
-<div class="flex flex-col gap-3">
-<div class="flex flex-wrap items-center gap-2">
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-primary">PHP Webhooks</span>
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-tertiary">JS Map APIs</span>
-<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded bg-surface-container-high text-on-surface">CSS Grid</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
-                FleetTrackr — Real-Time Consignment &amp; Dispatch Hub
-              </h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Live delivery management console rendering dynamic vehicle updates, waypoint notifications, driver status tracking, and exported manifest spreadsheets.
-              </p>
-</div>
-<div class="flex items-center justify-between pt-4 border-t-0 bg-surface-container-low/40 -mx-6 -mb-6 px-6 py-4">
-<a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-fixed font-headline-sm text-headline-sm transition-colors" href="https://wa.me/2348087824544?text=Hi%20Ayomide,%20I'd%20like%20to%20review%20FleetTrackr">
-<span>View Project Case</span>
-<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-<span class="font-code-inline text-code-inline text-on-surface-variant">REST API Driven</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION: TESTIMONIALS / COLLABORATION REVIEWS -->
-<section class="w-full py-space-xl bg-surface-container-low/30" id="experience">
-<div class="max-w-[1200px] mx-auto px-margin">
-<div class="flex flex-col items-center text-center gap-2 mb-12">
-<span class="text-tertiary font-label-md text-label-md tracking-wider uppercase font-bold">Trusted by Founders &amp; Engineering Leads</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">What Clients &amp; Colleagues Say</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Review 1 -->
-<div class="p-6 rounded-2xl bg-surface-container flex flex-col justify-between gap-6 shadow-md">
-<div class="flex flex-col gap-4">
-<div class="flex text-tertiary">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface leading-relaxed">
-              "Ayomide stepped into our backend overhaul and diagnosed our database bottlenecks within 48 hours. His PHP and MySQL skills are world-class, and his communication on WhatsApp was instantaneous."
-            </p>
-</div>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold font-label-md text-label-md">
-              TO
-            </div>
-<div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm text-on-surface">Tunde Oladipo</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">CTO, FinEdge Africa</span>
-</div>
-</div>
-</div>
-<!-- Review 2 -->
-<div class="p-6 rounded-2xl bg-surface-container flex flex-col justify-between gap-6 shadow-md">
-<div class="flex flex-col gap-4">
-<div class="flex text-primary">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface leading-relaxed">
-              "Working with Ayomide was seamless. He translated our complex Figma prototypes into pristine, responsive Bootstrap &amp; JavaScript code that performed impeccably on mobile devices."
-            </p>
-</div>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-tertiary/20 text-tertiary flex items-center justify-center font-bold font-label-md text-label-md">
-              EK
-            </div>
-<div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm text-on-surface">Elena K.</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Product Lead, NexaCorp</span>
-</div>
-</div>
-</div>
-<!-- Review 3 -->
-<div class="p-6 rounded-2xl bg-surface-container flex flex-col justify-between gap-6 shadow-md">
-<div class="flex flex-col gap-4">
-<div class="flex text-secondary">
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface leading-relaxed">
-              "Reliability is hard to find; Ayomide delivered our client billing dashboard two weeks ahead of schedule. The code was exceptionally well-commented and easy to extend."
-            </p>
-</div>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold font-label-md text-label-md">
-              CA
-            </div>
-<div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm text-on-surface">Chuka Anyanwu</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Founder, DevFlow Studio</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- SECTION: CONTACT & HIRE ME (DIRECT DETAILS) -->
-<section class="w-full py-space-xl relative overflow-hidden" id="contact">
-<div class="max-w-[1200px] mx-auto px-margin">
-<div class="p-8 sm:p-12 rounded-3xl bg-surface-container-high/80 backdrop-blur-xl shadow-2xl relative">
-<!-- Ambient corner accent -->
-<div class="absolute -top-20 -right-20 w-80 h-80 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-<!-- Contact Direct Details (6 cols) -->
-<div class="lg:col-span-6 flex flex-col gap-6">
-<div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-semibold">
-<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
-<span>Open for Contracts &amp; Full-Time</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
-              Let's engineer your next digital breakthrough together.
-            </h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-              Have an enterprise project, web application redesign, or engineering role you would like to discuss? Reach out directly via WhatsApp or email for immediate response.
-            </p>
-<!-- Direct Contact Methods Card List -->
-<div class="flex flex-col gap-3 pt-2">
-<!-- Direct Email Card -->
-<a class="p-4 rounded-xl bg-surface-container hover:bg-surface-container-highest transition-all duration-200 flex items-center justify-between group" href="mailto:ayomidedaniel451@gmail.com">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
-<span class="material-symbols-outlined text-[20px]">mail</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Email Address</span>
-<span class="font-code-inline text-code-inline text-on-surface group-hover:text-primary transition-colors font-semibold">ayomidedaniel451@gmail.com</span>
-</div>
-</div>
-<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-[20px]">arrow_outward</span>
-</a>
-<!-- WhatsApp Chat Card -->
-<a class="p-4 rounded-xl bg-surface-container hover:bg-surface-container-highest transition-all duration-200 flex items-center justify-between group" href="https://wa.me/2348087824544?text=Hello%20Ayomide,%20I'm%20reaching%20out%20from%20your%20portfolio" rel="noopener noreferrer" target="_blank">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-lg bg-tertiary/10 text-tertiary flex items-center justify-center">
-<span class="material-symbols-outlined text-[20px]">chat</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">WhatsApp Direct Line</span>
-<span class="font-code-inline text-code-inline text-on-surface group-hover:text-tertiary transition-colors font-semibold">+234 808 782 4544</span>
-</div>
-</div>
-<span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors text-[20px]">arrow_outward</span>
-</a>
-<!-- Direct Call Card -->
-<a class="p-4 rounded-xl bg-surface-container hover:bg-surface-container-highest transition-all duration-200 flex items-center justify-between group" href="tel:+2348087824544">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center">
-<span class="material-symbols-outlined text-[20px]">call</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Phone &amp; Cellular</span>
-<span class="font-code-inline text-code-inline text-on-surface group-hover:text-secondary transition-colors font-semibold">08087824544</span>
-</div>
-</div>
-<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors text-[20px]">arrow_outward</span>
-</a>
-</div>
-</div>
-<!-- Direct Interactive Form (6 cols) -->
-<div class="lg:col-span-6 bg-surface-container p-6 sm:p-8 rounded-2xl shadow-lg">
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Send an Instant Project Dispatch</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Fill in the parameters below to trigger a direct transmission.</p>
-<form class="flex flex-col gap-4" id="portfolio-contact-form">
-<div class="flex flex-col gap-1.5">
-<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider" for="contact-name">Your Name or Organization</label>
-<input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="contact-name" placeholder="e.g. Sarah Jenkins / Acme Tech" required="" type="text"/>
-</div>
-<div class="flex flex-col gap-1.5">
-<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider" for="contact-email">Your Email</label>
-<input class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline-variant font-code-inline text-code-inline focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="contact-email" placeholder="sarah@example.com" required="" type="email"/>
-</div>
-<div class="flex flex-col gap-1.5">
-<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider" for="project-scope">Primary Need</label>
-<select class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="project-scope">
-<option value="backend">Full-Stack / PHP &amp; MySQL Backend</option>
-<option value="frontend">Responsive Frontend (JS / CSS / Bootstrap)</option>
-<option value="contract">Comprehensive Contract Project</option>
-<option value="fulltime">Full-Time Software Engineer Role</option>
-</select>
-</div>
-<div class="flex flex-col gap-1.5">
-<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider" for="contact-message">Project Overview / Message</label>
-<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none" id="contact-message" placeholder="Tell me about your product requirements, deadlines, or tech stack..." required="" rows="3"></textarea>
-</div>
-<button class="w-full mt-2 py-3.5 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm hover:opacity-95 transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(6,182,212,0.3)]" id="submit-form-btn" type="submit">
-<span class="material-symbols-outlined text-[20px]">send</span>
-<span>Send Dispatch to Ayomide</span>
-</button>
-<div class="hidden p-3 rounded-lg bg-tertiary/15 text-tertiary font-body-sm text-body-sm text-center" id="form-feedback">
-                Transmission packaged! Redirecting you to send via email client or WhatsApp.
-              </div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Interactive Logic for Hero Slider & Light/Dark Theme Interactivity -->
-<script>
-    (function initPortfolioController() {
-      // 1. HERO SLIDER LOGIC
-      const slides = [
-        {
-          element: document.getElementById('slide-0'),
-          caption: "Transforming complex engineering bottlenecks into robust web applications, responsive interfaces, and production-ready APIs."
-        },
-        {
-          element: document.getElementById('slide-1'),
-          caption: "Building modular, asynchronous client-side experiences with ES6+ standards, smooth keyframes, and zero runtime overhead."
-        },
-        {
-          element: document.getElementById('slide-2'),
-          caption: "Merging relational databases, normalized SQL queries, and secure session management into bulletproof web products."
-        },
-        {
-          element: document.getElementById('slide-3'),
-          caption: "Available immediately for remote international teams, enterprise consulting, and high-impact agile web projects."
-        }
-      ];
+<main>
+<div class="view" id="home">
+  <section class="hero" id="top">
+    <div class="bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="grid"></div>
+      <svg class="trace" viewBox="0 0 1200 300" preserveAspectRatio="none"><path d="M0 250 L140 250 L180 170 L260 210 L340 90 L430 140 L520 60 L610 150 L700 110 L790 190 L880 70 L980 120 L1080 40 L1200 80"/></svg></div>
+    <div class="w">
+      <h1><span class="ln"><span>I build the web apps</span></span><span class="ln"><span>businesses run on.</span></span></h1>
+      <div class="hero-foot">
+        <div><p class="lede">Full-stack developer working in PHP, MySQL and JavaScript. Backends, APIs and responsive interfaces for businesses and teams, delivered remotely.</p>
+        <div class="cta" style="margin-top:1.75rem"><a class="btn p" href="#work">Explore my work</a><a class="btn" href="#contact">Start a project</a></div></div>
+        <figure class="pic"><img id="pic" decoding="async" alt="Portrait of Ayomide Daniel" width="720" height="900" src="assets/portrait.jpg"></figure>
+      </div>
+    </div>
+  </section>
 
-      const captionEl = document.getElementById('slide-caption');
-      const dots = document.querySelectorAll('.slider-dot');
-      let currentIndex = 0;
-      let slideInterval;
+  <div class="mq" aria-label="Technologies I work with"><ul id="mq"></ul></div>
 
-      function updateSlide(newIndex) {
-        if (!slides[0].element) return;
-        
-        // Hide previous
-        slides[currentIndex].element.classList.remove('opacity-100', 'translate-y-0');
-        slides[currentIndex].element.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
-        dots[currentIndex].classList.remove('w-6', 'bg-primary');
-        dots[currentIndex].classList.add('w-2', 'bg-outline-variant');
+  <section class="sec" id="about"><div class="w">
+    <p class="lab">About</p>
+    <p class="statement" id="st">I’m Ayomide Daniel, a full-stack developer in Lagos. I write server-side code that stays easy to change, and interfaces that work as well on a phone as on a desktop.</p>
+    <div class="about">
+      <div><p class="lab">How I work</p>
+        <p>I start with the data: sensible database design and safe queries. Then I build lean pages that load quickly and layouts that hold up on phones, tablets and desktops.</p>
+        <p>Most of my work is PHP and MySQL on the back end, JavaScript for interactive pages, and Bootstrap and CSS for layout.</p>
+        <p class="tl" data-gh hidden><a class="ul" href="#" target="_blank" rel="noopener noreferrer">See my code on GitHub</a></p></div>
+      <div><p class="lab">What I use</p>
+        <ul class="tags"><li>PHP 8</li><li>MySQL</li><li>REST APIs</li><li>Login and sessions</li><li>JavaScript</li><li>Fetch and async</li><li>Bootstrap 5</li><li>CSS Grid and Flexbox</li><li>Semantic HTML</li><li>Git and GitHub</li><li>Linux</li><li>Nginx and Apache</li><li>cPanel hosting</li></ul></div>
+    </div>
+    <dl class="pil"><div><dt>Data integrity</dt><dd>Sensible database design and safe queries.</dd></div><div><dt>Fast pages</dt><dd>Lean pages that load quickly.</dd></div><div><dt>Responsive layouts</dt><dd>Layouts that hold up on phones, tablets and desktops.</dd></div></dl>
+  </div></section>
 
-        // Show new
-        currentIndex = (newIndex + slides.length) % slides.length;
-        slides[currentIndex].element.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
-        slides[currentIndex].element.classList.add('opacity-100', 'translate-y-0');
-        dots[currentIndex].classList.remove('w-2', 'bg-outline-variant');
-        dots[currentIndex].classList.add('w-6', 'bg-primary');
+  <section class="sec" id="work"><div class="w">
+    <div class="wh"><h2>Selected work</h2><p class="note" style="max-width:24rem">Web applications I’ve worked on. Tap a project to see what it does, or ask me for a demo.</p></div>
 
-        if (captionEl) {
-          captionEl.style.opacity = '0';
-          setTimeout(() => {
-            captionEl.textContent = slides[currentIndex].caption;
-            captionEl.style.opacity = '1';
-          }, 200);
-        }
-      }
+    <ul class="wkl" style="list-style:none">
+    <li class="wk" data-open="true"><button type="button" aria-expanded="true" aria-controls="w1"><span class="n">01</span><span class="t"><span>OmniFlow</span></span><span class="c">Enterprise backend</span></button>
+      <div class="more" id="w1"><div><div class="body"><div><h3>Business and invoicing platform</h3><p style="color:var(--mute)">Invoicing, inventory tracking and staff accounts with different permission levels, backed by MySQL.</p></div><div><ul class="tags"><li>PHP 8</li><li>MySQL</li><li>JavaScript ES6</li><li>Bootstrap 5</li></ul><a class="btn" href="https://wa.me/2348087824544?text=Hi%20Ayomide,%20tell%20me%20more%20about%20the%20OmniFlow%20project" target="_blank" rel="noopener noreferrer">Ask for a demo</a></div></div></div></div></li>
+    <li class="wk" data-open="false"><button type="button" aria-expanded="false" aria-controls="w2"><span class="n">02</span><span class="t"><span>ApexCart</span></span><span class="c">E-commerce and payments</span></button>
+      <div class="more" id="w2"><div><div class="body"><div><h3>Online store and payments</h3><p style="color:var(--mute)">An online store with a cart, order notifications through webhooks, and stock that updates as items sell.</p></div><div><ul class="tags"><li>PHP REST API</li><li>Vanilla JS</li><li>CSS3</li></ul><a class="btn" href="https://wa.me/2348087824544?text=Hi%20Ayomide,%20I%20am%20interested%20in%20ApexCart" target="_blank" rel="noopener noreferrer">Ask for details</a></div></div></div></div></li>
+    <li class="wk" data-open="false"><button type="button" aria-expanded="false" aria-controls="w3"><span class="n">03</span><span class="t"><span>PulseClinic</span></span><span class="c">Portal and CRM</span></button>
+      <div class="more" id="w3"><div><div class="body"><div><h3>Appointments and patient portal</h3><p style="color:var(--mute)">Appointment booking with time slots, SMS reminders and doctor calendars, designed to work well on mobile.</p></div><div><ul class="tags"><li>PHP MVC</li><li>Bootstrap 5.3</li><li>AJAX and Fetch</li></ul><a class="btn" href="https://wa.me/2348087824544?text=Hi%20Ayomide,%20I%E2%80%99d%20like%20to%20learn%20about%20PulseClinic" target="_blank" rel="noopener noreferrer">Ask for details</a></div></div></div></div></li>
+    <li class="wk" data-open="false"><button type="button" aria-expanded="false" aria-controls="w4"><span class="n">04</span><span class="t"><span>FleetTrackr</span></span><span class="c">Logistics and geo</span></button>
+      <div class="more" id="w4"><div><div class="body"><div><h3>Delivery and dispatch dashboard</h3><p style="color:var(--mute)">A dashboard for tracking deliveries, driver status and vehicle updates, with spreadsheet export.</p></div><div><ul class="tags"><li>PHP webhooks</li><li>JS map APIs</li><li>CSS Grid</li></ul><a class="btn" href="https://wa.me/2348087824544?text=Hi%20Ayomide,%20I%E2%80%99d%20like%20to%20review%20FleetTrackr" target="_blank" rel="noopener noreferrer">Ask for details</a></div></div></div></div></li>
+    </ul>
+  </div></section>
 
-      function startAutoplay() {
-        clearInterval(slideInterval);
-        slideInterval = setInterval(() => {
-          updateSlide(currentIndex + 1);
-        }, 5500);
-      }
+  <section class="sec" id="services"><div class="w">
+    <div class="wh"><h2>What I do</h2></div>
+    <ul class="svc">
+      <li><span>01</span><h3>Backends and APIs</h3><p>Object-oriented PHP, REST endpoints, login and session handling.</p></li>
+      <li><span>02</span><h3>Database design</h3><p>MySQL schemas and queries that keep data consistent and safe.</p></li>
+      <li><span>03</span><h3>Responsive front ends</h3><p>JavaScript, CSS and Bootstrap interfaces, mobile-first, with accessible semantic HTML.</p></li>
+      <li><span>04</span><h3>Deployment</h3><p>Git workflows and hosting on Apache, Nginx and cPanel.</p></li>
+    </ul>
+  </div></section>
 
-      document.getElementById('next-slide-btn')?.addEventListener('click', () => {
-        updateSlide(currentIndex + 1);
-        startAutoplay();
-      });
+  <section class="sec" id="contact"><div class="w ct">
+    <div><h2>Let’s build something that works.</h2>
+      <p class="lead">Whether it’s a new web app, a redesign or a full-time role, send me a message and I’ll get back to you.</p>
+      <div class="ways"><a class="ul" href="mailto:ayomidedaniel451@gmail.com">ayomidedaniel451@gmail.com</a><a class="ul" href="https://wa.me/2348087824544?text=Hello%20Ayomide,%20I%E2%80%99m%20reaching%20out%20from%20your%20portfolio" target="_blank" rel="noopener noreferrer">WhatsApp +234 808 782 4544</a><a class="ul" href="tel:+2348087824544">Call 08087824544</a><a class="ul" data-gh hidden href="#" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+      <p style="margin-top:2rem"><a class="btn" href="#book">Book a call</a></p></div>
+    <div><form id="cf">
+      <label>Name<input id="cn" type="text" placeholder="Your name or company" required></label>
+      <label>Email<input id="ce" type="email" placeholder="you@example.com" required></label>
+      <label>What do you need?<select id="cs"><option>Full-stack / PHP and MySQL back end</option><option>Responsive front end (JS / CSS / Bootstrap)</option><option>Contract project</option><option>Full-time role</option></select></label>
+      <label>Message<textarea id="cm" rows="4" placeholder="What are you building, and when do you need it?" required></textarea></label>
+      <button class="btn p" type="submit">Send message</button>
+      <div id="ok" role="status"><strong>Opening your email app.</strong><p class="note">If nothing opens, email me directly or <a href="#book">book a call</a>.</p></div>
+    </form></div>
+  </div></section>
+</div>
 
-      document.getElementById('prev-slide-btn')?.addEventListener('click', () => {
-        updateSlide(currentIndex - 1);
-        startAutoplay();
-      });
+<div class="view" id="bookv" hidden><section id="book"><div class="w ct">
+  <div><p class="lab">Book a call</p><h2>Let’s talk it through.</h2>
+    <p class="lead">A 30-minute call to discuss a project, a role, or a technical question. Pick a purpose, a day and a time, and I’ll confirm by reply.</p>
+    <p class="note" style="margin-top:1.5rem">Times are Lagos time (WAT). Requests are confirmed by me directly, there is no automatic booking yet.</p>
+    <p style="margin-top:1.5rem"><a class="btn p" id="cal" href="#" hidden target="_blank" rel="noopener noreferrer">Open booking calendar</a></p></div>
+  <div style="display:grid;gap:1.6rem">
+    <div class="fl">Purpose<div class="chips" id="pur"></div></div>
+    <div class="fl">Day<div class="chips" id="days"></div></div>
+    <div class="fl">Time (WAT)<div class="chips" id="tms"></div></div>
+    <label>Your name<input id="bn" type="text" placeholder="Name or company"></label>
+    <label>Anything I should know?<textarea id="bm" rows="3"></textarea></label>
+    <div class="cta"><button class="btn p" id="bw" type="button" disabled>Request via WhatsApp</button><button class="btn" id="be" type="button" disabled>Request via email</button></div>
+    <p class="note" id="sum" aria-live="polite">Choose a day and a time to continue.</p>
+  </div>
+</div></section></div>
+</main>
 
-      dots.forEach((dot, idx) => {
-        dot.addEventListener('click', () => {
-          updateSlide(idx);
-          startAutoplay();
-        });
-      });
+<footer><div class="w"><span>© 2026 Ayomide Daniel</span><span>Full-stack developer, Lagos</span></div></footer>
 
-      startAutoplay();
-
-      // 2. THEME TOGGLE CONTROLLER
-      const themeToggleBtn = document.getElementById('theme-toggle');
-      if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', () => {
-          const isDark = document.documentElement.classList.toggle('dark');
-          const icon = themeToggleBtn.querySelector('.material-symbols-outlined');
-          if (icon) {
-            icon.textContent = isDark ? 'light_mode' : 'dark_mode';
-          }
-        });
-      }
-
-      // 3. CONTACT FORM INTERACTION
-      const contactForm = document.getElementById('portfolio-contact-form');
-      const feedbackEl = document.getElementById('form-feedback');
-
-      if (contactForm && feedbackEl) {
-        contactForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          const name = document.getElementById('contact-name').value;
-          const email = document.getElementById('contact-email').value;
-          const scope = document.getElementById('project-scope').value;
-          const message = document.getElementById('contact-message').value;
-
-          feedbackEl.classList.remove('hidden');
-          feedbackEl.textContent = "Thank you " + name + "! Opening direct mail composer to Ayomide...";
-
-          setTimeout(() => {
-            const mailtoUri = "mailto:ayomidedaniel451@gmail.com?subject=" + encodeURIComponent("Project Inquiry: " + scope + " (" + name + ")") + "&body=" + encodeURIComponent("From: " + name + " (" + email + ")\n\n" + message);
-            window.location.href = mailtoUri;
-          }, 1000);
-        });
-      }
-    })();
-  </script>
-</div></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant"><div class="max-w-[1200px] mx-auto px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col items-center md:items-start gap-1"><div class="font-label-md text-label-md text-on-surface font-semibold">Ayomide Daniel</div><div class="font-body-sm text-body-sm text-on-surface-variant">Full-Stack Software Engineer • Enterprise &amp; Web Architectures</div></div><div class="flex flex-wrap items-center justify-center gap-6 font-code-inline text-code-inline"><a class="flex items-center gap-2 hover:text-primary transition-colors" href="mailto:ayomidedaniel451@gmail.com"><span class="material-symbols-outlined text-[16px]">mail</span>ayomidedaniel451@gmail.com</a><a class="flex items-center gap-2 hover:text-tertiary transition-colors" href="https://wa.me/2348087824544"><span class="material-symbols-outlined text-[16px]">chat</span>WhatsApp: +234 808 782 4544</a></div><div class="flex items-center gap-4 text-on-surface-variant"><a aria-label="Code repository" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span></a><a aria-label="Professional profile" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">link</span></a><a aria-label="Developer notes" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">article</span></a></div></div><div class="w-full bg-surface-container-low/50 py-space-sm"><div class="max-w-[1200px] mx-auto px-margin flex flex-col sm:flex-row items-center justify-between gap-2 text-center"><p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 Ayomide Daniel. Built with modern web standards. All rights reserved.</p><span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary inline-block"></span>System Operational</span></div></div></footer></body></html>
+<script src="script.js" defer></script>
+</body>
+</html>
